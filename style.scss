@@ -36,14 +36,14 @@ $sizes : 1,2,3,4,5,6,7,8,9,10;
 	}
 }
 
-$display : block,flex,inline;
+$display : none,block,flex,inline;
 @each $i in $display{
     .d-#{$i} {//display properties ex .d-flex .d-block
 		display: $i;
 	}
 }
 
-$position : absolute,relative,sticky;
+$position : absolute,relative,sticky,fixed;
 @each $i in $position{
     .p-#{$i} {//position property ex .p-absolute .p-relative
 		position: $i;
